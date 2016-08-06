@@ -19,9 +19,8 @@ namespace R4nd0mApps.TddStud10.Hosts.VS
     // NOTE: Move to FS when we make a change in this next.
     public class PackageCommands
     {
-        private readonly Settings _settings;
-        private EnvDTE.DTE _dte;
-        private IMenuCommandService _mcs;
+        private readonly EnvDTE.DTE _dte;
+        private readonly IMenuCommandService _mcs;
 
         public PackageCommands(IServiceProvider serviceProvider)
         {
