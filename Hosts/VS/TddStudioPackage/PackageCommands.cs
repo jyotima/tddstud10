@@ -23,9 +23,8 @@ namespace R4nd0mApps.TddStud10.Hosts.VS
         private EnvDTE.DTE _dte;
         private IMenuCommandService _mcs;
 
-        public PackageCommands(IServiceProvider serviceProvider, Settings settings)
+        public PackageCommands(IServiceProvider serviceProvider)
         {
-            _settings = settings;
             _dte = serviceProvider.GetService<EnvDTE.DTE>();
             _mcs = serviceProvider.GetService<IMenuCommandService>();
         }
